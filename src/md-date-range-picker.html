@@ -4,9 +4,7 @@
             <div class="md-date-range-picker__calendar-wrapper">
                 <div class="md-date-range-picker__month-year" layout="row" layout-align="center center">
                     <div flex layout="column" layout-align="center center">
-                        <span aria-label="Previous Month" class="md-button md-icon-button" event-key="prev">
-                            <md-icon md-svg-src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnPjxwb2x5Z29uIHBvaW50cz0iMTUuNCw3LjQgMTQsNiA4LDEyIDE0LDE4IDE1LjQsMTYuNiAxMC44LDEyICIvPjwvZz48L3N2Zz4="></md-icon>
-                        </span>
+                        <span aria-label="Previous Month" class="md-button md-icon-button" event-key="prev"><md-icon aria-hidden="true"><svg version="1.1" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false"><g><polygon points="15.4,7.4 14,6 8,12 14,18 15.4,16.6 10.8,12 "></polygon></g></svg></md-icon></span>
                     </div>
                     <md-select md-container-class="md-date-range-picker__select" md-on-close="updateActiveDate()" ng-model="activeMonth" placeholder="{{::getLocalizationVal('Month')}}"
                         class="md-no-underline">
@@ -17,9 +15,7 @@
                         <md-option ng-value="::year.id" ng-repeat="year in years" ng-bind="::year.name"></md-option>
                     </md-select>
                     <div flex layout="column" layout-align="center center" class="hide-gt-sm show-sm show-xs">
-                        <span aria-label="Next Month" class="md-icon-button md-button" event-key="next">
-                            <md-icon style="transform: rotate(-180deg)" md-svg-src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxnPjxwb2x5Z29uIHBvaW50cz0iMTUuNCw3LjQgMTQsNiA4LDEyIDE0LDE4IDE1LjQsMTYuNiAxMC44LDEyICIvPjwvZz48L3N2Zz4="></md-icon>
-                        </span>
+                        <span aria-label="Previous Month" class="md-button md-icon-button" event-key="prev"><md-icon style="transform: rotate(-180deg)" aria-hidden="true"><svg version="1.1" x="0px" y="0px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fit="" height="100%" width="100%" preserveAspectRatio="xMidYMid meet" focusable="false"><g><polygon points="15.4,7.4 14,6 8,12 14,18 15.4,16.6 10.8,12 "></polygon></g></svg></md-icon></span>
                     </div>
                     <div flex ng-if="onePanel" layout="column" layout-align="center center" class="hide-sm hide-xs show-gt-sm">
                         <span aria-label="Next Month" class="md-icon-button md-button" event-key="next">
